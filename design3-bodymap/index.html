@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>からだの地図をひらく｜TAIJIKU 子どもの運動学習塾 〇〇校（練習用サンプル）</title>
+<meta name="description" content="鍛える前に、感じる。体のスイッチに触れながら動く「体の学習教室」。ホームページ制作の練習用サンプル。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7f3;
+    --bg-2:#eef3f1;
+    --ink:#1e2b2f;
+    --ink-2:#4c5a5e;
+    --persimmon:#f26b4b;
+    --persimmon-ink:#c4472a;
+    --teal:#2a8c82;
+    --teal-deep:#1d675f;
+    --yellow:#f5c242;
+    --mist:#dceff0;
+    --blush:#fde3da;
+    --white:#fff;
+    --num:"Fredoka","Zen Kaku Gothic New",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;font-size:16px;line-height:1.9;letter-spacing:.03em;overflow-x:hidden}
+  a{color:var(--teal-deep)}
+  :focus-visible{outline:3px solid var(--persimmon);outline-offset:3px;border-radius:8px}
+  .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--ink);color:#fff;padding:8px 12px;z-index:300}
+  .sample{background:var(--ink);color:#fff;font-size:12.5px;text-align:center;padding:6px 12px}
+  .sample b{color:var(--yellow)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  section{padding:96px 0;position:relative}
+  .tbd{display:inline-block;font-size:11px;font-weight:700;color:#7a4b00;background:#ffe9a8;border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:3px;letter-spacing:0;font-family:"Zen Kaku Gothic New",sans-serif}
+
+  /* 見出し */
+  .kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--num);font-weight:600;font-size:14px;letter-spacing:.14em;color:var(--teal)}
+  .kicker::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--persimmon);box-shadow:0 0 0 5px rgba(242,107,75,.18)}
+  h2{font-weight:900;font-size:clamp(26px,4.6vw,42px);line-height:1.4;margin:12px 0 18px;letter-spacing:.02em}
+  .hl{color:var(--persimmon-ink)}
+  .hl-t{color:var(--teal)}
+  .lead{color:var(--ink-2);max-width:36em}
+
+  /* ヘッダー */
+  .nav{position:sticky;top:12px;z-index:80;margin:12px auto 0;max-width:1120px;padding:0 14px}
+  .nav-in{background:rgba(255,255,255,.88);backdrop-filter:blur(8px);border-radius:999px;display:flex;align-items:center;gap:12px;padding:8px 8px 8px 20px;box-shadow:0 8px 24px -16px rgba(30,43,47,.5)}
+  .mark{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font-weight:900;font-size:14px;margin-right:auto;line-height:1.2}
+  .mark i{width:26px;height:26px;border-radius:50%;background:var(--teal);position:relative;flex:none}
+  .mark i::after{content:"";position:absolute;left:9px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--yellow)}
+  .nav a.link{display:none;color:var(--ink);text-decoration:none;font-size:14px;font-weight:700;padding:6px 10px}
+  @media(min-width:900px){.nav a.link{display:inline-block}}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:var(--persimmon);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:10px 18px;min-height:44px;font-size:14px;transition:background .2s,transform .2s}
+  .pill:hover{background:var(--persimmon-ink)}
+
+  /* ヒーロー */
+  .hero{padding:56px 0 80px}
+  .hero-grid{display:grid;gap:30px;align-items:center}
+  @media(min-width:920px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .hero h1{font-weight:900;font-size:clamp(36px,7.4vw,70px);line-height:1.22;margin:16px 0 22px;letter-spacing:.01em}
+  .hero h1 .soft{display:block;font-size:.5em;font-weight:700;color:var(--ink-2);letter-spacing:.06em;margin-bottom:10px}
+  .hero h1 .u{background:linear-gradient(transparent 70%,rgba(245,194,66,.6) 70%)}
+  .hero p{font-size:17px;color:var(--ink-2);max-width:30em}
+  .hero .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;align-items:center}
+  .big{display:inline-flex;align-items:center;gap:10px;background:var(--persimmon);color:#fff;text-decoration:none;font-weight:900;font-size:17px;border-radius:999px;padding:16px 28px;min-height:56px;box-shadow:0 12px 26px -14px rgba(242,107,75,.9);transition:transform .2s,background .2s}
+  .big:hover{transform:translateY(-2px);background:var(--persimmon-ink)}
+  .big svg{width:20px;height:20px}
+  .meta{font-size:14px;color:var(--ink-2);font-weight:700}
+  .meta b{font-family:var(--num);color:var(--teal);font-size:18px;margin-right:2px}
+
+  .stage{position:relative;aspect-ratio:1/1;max-width:520px;margin:0 auto;width:100%}
+  .blob{position:absolute;border-radius:48% 52% 60% 40% / 45% 40% 60% 55%;filter:saturate(1.05)}
+  .blob.a{inset:8% 10% 12% 6%;background:var(--mist)}
+  .blob.b{width:34%;height:30%;right:0;top:2%;background:var(--blush);border-radius:60% 40% 50% 50%/50% 60% 40% 50%}
+  .blob.c{width:22%;height:20%;left:0;bottom:6%;background:#fbe6a8;border-radius:50%}
+  .oval{position:absolute;border-radius:50%;overflow:hidden;border:6px solid var(--white);box-shadow:0 16px 30px -18px rgba(30,43,47,.6);display:grid;place-items:center;text-align:center;font-size:11.5px;color:var(--ink-2);background:repeating-linear-gradient(135deg,#e9efe9 0 10px,#e1e9e3 10px 20px)}
+  .oval.o1{width:30%;aspect-ratio:3/4;right:2%;top:12%;animation:float 7s ease-in-out infinite}
+  .oval.o2{width:26%;aspect-ratio:1;left:2%;top:18%;animation:float 8s ease-in-out -2s infinite}
+  .oval.o3{width:24%;aspect-ratio:4/3;right:10%;bottom:4%;animation:float 6.5s ease-in-out -4s infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .figure{position:absolute;left:28%;top:10%;width:44%;height:84%}
+  .figure svg{width:100%;height:100%;overflow:visible}
+  .pulse{animation:pulse 2.6s ease-out infinite;transform-origin:center;transform-box:fill-box}
+  @keyframes pulse{0%{opacity:.55;transform:scale(1)}100%{opacity:0;transform:scale(2.6)}}
+
+  /* 悩み（傾いたカード→まっすぐ） */
+  .worry-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:30px}
+  .wcard{background:var(--white);border-radius:22px;padding:22px 22px 22px 22px;box-shadow:0 10px 24px -18px rgba(30,43,47,.55);font-weight:700;position:relative;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+  .wcard small{display:block;font-weight:500;color:var(--ink-2);font-size:13px;margin-top:6px}
+  .wcard:nth-child(1){transform:rotate(-4deg) translateY(6px)}
+  .wcard:nth-child(2){transform:rotate(3deg)}
+  .wcard:nth-child(3){transform:rotate(-2deg) translateY(10px)}
+  .wcard:nth-child(4){transform:rotate(4deg) translateY(-4px)}
+  .wcard:nth-child(5){transform:rotate(-3deg)}
+  .wcard:nth-child(6){transform:rotate(2deg) translateY(8px)}
+  .worry-grid.aligned .wcard{transform:none}
+  .wcard q{quotes:"「" "」"}
+  .shift{margin-top:46px;display:grid;gap:16px;align-items:center}
+  @media(min-width:800px){.shift{grid-template-columns:1fr auto 1fr}}
+  .shift div{border-radius:22px;padding:22px;font-weight:700}
+  .shift .from{background:var(--bg-2);color:var(--ink-2)}
+  .shift .to{background:var(--teal);color:#fff}
+  .shift .arr{font-family:var(--num);font-size:30px;color:var(--persimmon);text-align:center}
+
+  /* データ */
+  .data{background:var(--white);border-radius:36px;padding:44px 26px;display:grid;gap:26px;align-items:center;box-shadow:0 20px 40px -32px rgba(30,43,47,.6)}
+  @media(min-width:860px){.data{grid-template-columns:1fr 1.1fr;padding:56px}}
+  .bars{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:end;height:240px}
+  .bars .b{border-radius:22px 22px 8px 8px;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;padding-top:14px;color:#fff;font-family:var(--num);font-weight:600}
+  .bars .b span{font-size:30px;line-height:1}
+  .bars .b em{font-style:normal;font-size:13px;font-family:"Zen Kaku Gothic New";font-weight:700;opacity:.9}
+  .bars .b1{height:100%;background:var(--teal)}
+  .bars .b2{height:54%;background:var(--persimmon)}
+  .bars-label{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:center;font-family:var(--num);font-weight:600;color:var(--ink-2);margin-top:8px}
+  .src{font-size:12px;color:var(--ink-2);margin-top:10px}
+
+  /* からだの地図 */
+  .map{display:grid;gap:30px;align-items:center;margin-top:20px}
+  @media(min-width:900px){.map{grid-template-columns:.9fr 1.1fr}}
+  .map-fig{background:var(--white);border-radius:40px;padding:26px;max-width:400px;width:100%;margin:0 auto;position:relative;box-shadow:0 20px 40px -32px rgba(30,43,47,.6)}
+  .map-fig svg{width:100%;height:auto;display:block}
+  .dot{cursor:pointer}
+  .dot circle.core{fill:var(--persimmon);transition:r .2s, fill .2s}
+  .dot circle.ring{fill:none;stroke:var(--persimmon);stroke-width:2;opacity:.35}
+  .dot:hover circle.core,.dot:focus circle.core{fill:var(--persimmon-ink)}
+  .dot[aria-pressed="true"] circle.core{fill:var(--teal)}
+  .dot[aria-pressed="true"] circle.ring{stroke:var(--teal);opacity:.9}
+  .dot:focus{outline:none}
+  .dot:focus-visible circle.ring{stroke:var(--ink);opacity:1;stroke-width:3}
+  .panel{background:var(--ink);color:#fff;border-radius:30px;padding:30px 28px;min-height:260px;position:relative;overflow:hidden}
+  .panel::after{content:"";position:absolute;right:-40px;bottom:-40px;width:160px;height:160px;border-radius:50%;background:rgba(42,140,130,.4)}
+  .panel .p-k{font-family:var(--num);color:var(--yellow);letter-spacing:.12em;font-size:13px}
+  .panel h3{font-size:28px;margin:4px 0 10px;font-weight:900}
+  .panel p{margin:0 0 14px;color:#d7e3e3}
+  .panel .use{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:1}
+  .panel .use span{background:rgba(255,255,255,.12);border-radius:999px;padding:4px 12px;font-size:13.5px;font-weight:700}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chips button{font:inherit;font-size:13.5px;font-weight:700;border:2px solid var(--mist);background:var(--white);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer;min-height:40px}
+  .chips button[aria-pressed="true"]{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .hint{font-size:13px;color:var(--ink-2);margin-top:12px}
+
+  /* 3ステップ */
+  .three{display:grid;gap:18px;margin-top:34px}
+  @media(min-width:820px){.three{grid-template-columns:repeat(3,1fr)}}
+  .three div{background:var(--white);border-radius:28px;padding:28px 24px;position:relative}
+  .three .n{font-family:var(--num);font-size:56px;line-height:1;color:var(--mist);font-weight:600;-webkit-text-stroke:2px var(--teal);color:transparent}
+  .three h3{margin:6px 0 6px;font-size:20px}
+  .three p{margin:0;color:var(--ink-2);font-size:15px}
+
+  /* 特徴 */
+  .feat{display:grid;gap:18px;margin-top:34px}
+  @media(min-width:820px){.feat{grid-template-columns:1.2fr 1fr 1fr}}
+  .fcard{border-radius:30px;padding:30px 26px;background:var(--white)}
+  .fcard.main{background:var(--teal);color:#fff}
+  .fcard.main p{color:#dff0ee}
+  .fcard.y{background:#fbefc8}
+  .fcard .k{font-family:var(--num);font-size:14px;letter-spacing:.12em;opacity:.85}
+  .fcard h3{font-size:21px;line-height:1.5;margin:8px 0 10px;font-weight:900}
+  .fcard p{margin:0;color:var(--ink-2);font-size:15px}
+
+  /* 事例 */
+  .stories{display:grid;gap:22px;margin-top:30px}
+  @media(min-width:860px){.stories{grid-template-columns:1fr 1fr}}
+  .st{background:var(--white);border-radius:32px;padding:30px 28px;display:grid;gap:14px}
+  .st .head{display:flex;align-items:center;gap:14px}
+  .st .av{width:64px;height:64px;border-radius:50%;flex:none;background:repeating-linear-gradient(135deg,#e9efe9 0 8px,#e1e9e3 8px 16px)}
+  .st .who{font-size:13px;color:var(--ink-2);font-weight:700}
+  .st h3{margin:0;font-size:20px}
+  .st .fig{font-family:var(--num);font-weight:600;display:flex;align-items:baseline;gap:10px}
+  .st .fig .from{font-size:26px;color:var(--ink-2)}
+  .st .fig .to{font-size:52px;color:var(--persimmon)}
+  .st .fig small{font-size:16px}
+  .st ul{margin:0;padding-left:1.2em;color:var(--ink-2);font-size:15px}
+  .st .chk{justify-self:start;background:#ffe9a8;color:#7a4b00;font-size:12px;font-weight:700;border-radius:6px;padding:1px 8px}
+  .days{display:flex;gap:6px;flex-wrap:wrap}
+  .days span{font-size:12.5px;font-weight:700;border-radius:999px;padding:3px 10px;background:var(--mist);color:var(--teal-deep)}
+  .days span.goal{background:var(--persimmon);color:#fff}
+  .disc{font-size:12.5px;color:var(--ink-2);margin-top:14px}
+
+  /* 講師 */
+  .teacher{display:grid;gap:34px;align-items:center}
+  @media(min-width:880px){.teacher{grid-template-columns:.85fr 1.15fr}}
+  .t-ph{aspect-ratio:4/5;border-radius:48% 52% 46% 54%/40% 42% 58% 60%;background:repeating-linear-gradient(135deg,#fde3da 0 14px,#fbd6ca 14px 28px);display:grid;place-items:center;color:var(--persimmon-ink);font-size:14px;max-width:240px;margin:0 auto;width:100%}
+  @media(min-width:880px){.t-ph{max-width:380px}}
+  .t-name{font-size:30px;font-weight:900;margin:6px 0 4px}
+  .t-role{color:var(--teal);font-weight:700}
+  .tl{list-style:none;padding:0;margin:20px 0 0;border-left:3px solid var(--mist)}
+  .tl li{padding:0 0 14px 22px;position:relative;font-size:15px}
+  .tl li::before{content:"";position:absolute;left:-8px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--white);border:3px solid var(--teal)}
+  .tl b{font-family:var(--num);color:var(--teal);margin-right:6px}
+  .voice{margin-top:18px;background:var(--white);border-radius:24px;padding:20px 22px;font-weight:500;position:relative}
+  .voice::before{content:"“";font-family:var(--num);font-size:60px;line-height:1;color:var(--persimmon);position:absolute;left:14px;top:-12px}
+
+  /* 時間割 */
+  .sched{display:grid;gap:20px;margin-top:30px}
+  @media(min-width:880px){.sched{grid-template-columns:1.3fr 1fr}}
+  .dayc{background:var(--white);border-radius:30px;padding:24px 24px 14px}
+  .dayc .dh{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .dayc .badge{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:18px}
+  .sat .badge{background:var(--yellow);color:var(--ink)}
+  .tue .badge{background:var(--teal);color:#fff}
+  .dayc .dh b{font-size:18px;display:block;line-height:1.3}
+  .dayc .dh small{color:var(--ink-2);font-size:13px}
+  .slot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-top:1px solid var(--bg-2);font-weight:700}
+  .slot time{font-family:var(--num);font-weight:500;font-size:17px;letter-spacing:.02em}
+  .cls{font-size:13px;border-radius:999px;padding:3px 12px}
+  .cls.j{background:var(--mist);color:var(--teal-deep)}
+  .cls.k{background:var(--blush);color:var(--persimmon-ink)}
+  .cls.o{background:var(--bg-2);color:var(--ink-2)}
+  .side{display:grid;gap:20px;align-content:start}
+  .note-c{background:#fbefc8;border-radius:24px;padding:20px 22px;font-size:14.5px}
+  .price{background:var(--ink);color:#fff;border-radius:30px;padding:26px 26px}
+  .price .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+  .price .row:last-of-type{border-bottom:0}
+  .price b{font-family:var(--num);font-size:30px;font-weight:600;color:var(--yellow)}
+  .price small{color:#c5d3d3;font-size:12.5px;display:block}
+
+  /* FAQ */
+  .faq{display:grid;gap:12px;margin-top:30px;max-width:860px}
+  details{background:var(--white);border-radius:22px}
+  summary{list-style:none;cursor:pointer;padding:20px 60px 20px 24px;font-weight:700;position:relative;min-height:56px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"";position:absolute;right:22px;top:50%;width:22px;height:22px;margin-top:-11px;border-radius:50%;background:var(--persimmon);box-shadow:0 0 0 6px rgba(242,107,75,.15);transition:background .2s}
+  details[open] summary::after{background:var(--teal);box-shadow:0 0 0 6px rgba(42,140,130,.18)}
+  details p{margin:0;padding:0 24px 20px;color:var(--ink-2);font-size:15px}
+
+  /* 最後のCTA */
+  .final{background:var(--teal);color:#fff;border-radius:44px;padding:56px 26px;text-align:center;position:relative;overflow:hidden}
+  .final::before,.final::after{content:"";position:absolute;border-radius:50%}
+  .final::before{width:240px;height:240px;background:rgba(245,194,66,.25);left:-60px;top:-80px}
+  .final::after{width:300px;height:300px;background:rgba(242,107,75,.25);right:-90px;bottom:-140px}
+  .final h2{margin-top:0;position:relative}
+  .final p{position:relative;color:#e0f1ef}
+  .final .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px;position:relative}
+  .final .big{background:var(--white);color:var(--persimmon-ink)}
+  .final .ghost{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;border:2px solid rgba(255,255,255,.7);border-radius:999px;padding:14px 24px;min-height:56px}
+  .road{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px;position:relative}
+  .road span{background:rgba(255,255,255,.14);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px}
+
+  footer{padding:50px 0 120px;text-align:center;font-size:12.5px;color:var(--ink-2)}
+
+  /* 追従CTA */
+  .dock{position:fixed;left:0;right:0;bottom:0;z-index:90;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(246,247,243,.94);backdrop-filter:blur(8px);box-shadow:0 -10px 24px -18px rgba(30,43,47,.6)}
+  .dock a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:50px;border-radius:999px;font-weight:900;text-decoration:none;font-size:15px}
+  .dock .a1{background:var(--persimmon);color:#fff}
+  .dock .a2{background:var(--white);color:var(--teal-deep);border:2px solid var(--teal)}
+  .vtab{display:none}
+  @media(min-width:900px){
+    .dock{display:none}
+    footer{padding-bottom:60px}
+    .vtab{display:flex;position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:90;flex-direction:column;gap:6px}
+    .vtab a{writing-mode:vertical-rl;text-decoration:none;font-weight:900;font-size:14.5px;letter-spacing:.18em;padding:18px 12px;border-radius:18px 0 0 18px;color:#fff;background:var(--persimmon);box-shadow:0 10px 20px -14px rgba(0,0,0,.5);transition:padding .2s}
+    .vtab a:hover{padding-right:18px}
+    .vtab a.t2{background:var(--teal)}
+  }
+
+  .rise{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+  .rise.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .rise{opacity:1;transform:none;transition:none}
+    .oval,.pulse{animation:none}
+    .wcard{transition:none}
+  }
+
+  .sample-badge{position:fixed;left:-46px;bottom:28px;z-index:300;transform:rotate(45deg);background:#222;color:#ffe066;
+    font:700 12px/1 sans-serif;letter-spacing:.2em;padding:8px 52px;pointer-events:none;opacity:.9}
+  @media(max-width:899px){.sample-badge{bottom:150px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+<div class="sample" role="note"><b>練習用サンプル</b>　ホームページ制作の練習で作った架空の教室ページです。名前・場所・時間・写真はすべて仮のものです（デザイン3：からだの地図）</div>
+
+<div class="nav">
+  <div class="nav-in">
+    <a class="mark" href="#"><i aria-hidden="true"></i>TAIJIKU 子どもの運動学習塾<br>〇〇校</a>
+    <a class="link" href="#map">からだの地図</a>
+    <a class="link" href="#teacher">先生</a>
+    <a class="link" href="#schedule">時間割・料金</a>
+    <a class="link" href="#faq">質問</a>
+    <a class="pill" href="#trial">体験会</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="rise">
+        <span class="kicker">OPEN 20XX.04 ／ SAMPLE</span>
+        <h1><span class="soft">鍛える前に、感じる。</span>体育の苦手を、<br><span class="u">できた！</span>に。</h1>
+        <p>体のスイッチに触れながら動いて、自分の体の「地図」をひらいていく。筋トレでも反復練習でもない、<b>体の学習教室</b>です。</p>
+        <div class="row">
+          <a class="big" href="#trial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>3月の体験会を予約する</a>
+          <span class="meta"><b>50</b>分・<b>8</b>名まで・3歳から</span>
+        </div>
+      </div>
+      <div class="stage rise" aria-hidden="true">
+        <span class="blob a"></span><span class="blob b"></span><span class="blob c"></span>
+        <div class="figure">
+          <svg viewBox="0 0 200 360" fill="none">
+            <g stroke="#1e2b2f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="100" cy="44" r="26"/>
+              <path d="M100 70v118"/>
+              <path d="M100 98c-24 2-40 14-56 46l-12 34"/>
+              <path d="M100 98c24 2 40-6 58-34l14-24"/>
+              <path d="M100 188c-10 40-22 80-34 150"/>
+              <path d="M100 188c14 36 30 72 42 150"/>
+            </g>
+            <g fill="#f26b4b">
+              <circle cx="72" cy="112" r="6"/><circle class="pulse" cx="72" cy="112" r="6"/>
+              <circle cx="100" cy="128" r="6"/>
+              <circle cx="32" cy="178" r="6"/><circle class="pulse" cx="32" cy="178" r="6" style="animation-delay:-1.2s"/>
+              <circle cx="86" cy="198" r="6"/>
+              <circle cx="80" cy="262" r="6"/><circle class="pulse" cx="80" cy="262" r="6" style="animation-delay:-.6s"/>
+              <circle cx="66" cy="336" r="6"/>
+            </g>
+          </svg>
+        </div>
+        <div class="oval o1">写真<br>体軸体操</div>
+        <div class="oval o2">写真<br>鉄棒</div>
+        <div class="oval o3">写真<br>親子で</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:40px" aria-labelledby="w">
+    <div class="wrap">
+      <span class="kicker">VOICE OF PARENTS</span>
+      <h2 id="w">こんな<span class="hl">「なんで？」</span>、ありませんか。</h2>
+      <div class="worry-grid" id="worries">
+        <div class="wcard"><q>何度練習しても、逆上がりができない</q><small>鉄棒・跳び箱・マット</small></div>
+        <div class="wcard"><q>かけっこが遅くて、よく転ぶ</q><small>走る・バランス</small></div>
+        <div class="wcard"><q>すぐ猫背。姿勢が保てない</q><small>授業中の姿勢</small></div>
+        <div class="wcard"><q>靴紐やお箸がうまく使えない</q><small>手先の操作</small></div>
+        <div class="wcard"><q>体育きらい、と言いはじめた</q><small>自信・意欲</small></div>
+        <div class="wcard"><q>ボールがうまく投げられない</q><small>投げる・打つ</small></div>
+      </div>
+      <div class="shift rise">
+        <div class="from">できないのは、練習やがんばりが足りないから</div>
+        <div class="arr" aria-hidden="true">→</div>
+        <div class="to">まだ「体の使い方」を学ぶ機会がなかっただけ</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:20px" aria-labelledby="d">
+    <div class="wrap">
+      <div class="data rise">
+        <div>
+          <span class="kicker">TODAY</span>
+          <h2 id="d">外遊びの時間は、<br><span class="hl-t">35年で約半分</span>に。</h2>
+          <p class="lead">外遊びは、子どもにとって「体の学習」の時間でした。その時間が減ったぶん、体の大きさに「体を動かす力」が追いついていない子が増えています。学校では、跳び箱の「やり方」は教わっても、「体の使い方」を教わる時間はほとんどありません。</p>
+          <p class="src">子どもの1日の外遊び時間（体軸入門セミナーで紹介されたデータ）</p>
+        </div>
+        <div>
+          <div class="bars" role="img" aria-label="1981年は1日約130分、2016年は約70分">
+            <div class="b b1"><span>130</span><em>分／日</em></div>
+            <div class="b b2"><span>70</span><em>分／日</em></div>
+          </div>
+          <div class="bars-label"><span>1981</span><span>2016</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" style="background:var(--bg-2)" aria-labelledby="m">
+    <div class="wrap">
+      <span class="kicker">BODY MAP</span>
+      <h2 id="m">からだには、<span class="hl">動きのスイッチ</span>がある。</h2>
+      <p class="lead">体軸では、全身14か所の「クロスポイント」に触れながら動きます。触れたところに意識が向き、そこを中心に体が動かしやすくなる。ポイントを押して、どんな動きにつながるか見てみてください。</p>
+      <div class="map">
+        <div class="map-fig rise">
+          <svg viewBox="0 0 300 400" role="group" aria-label="体のスイッチの図">
+            <g fill="none" stroke="#1e2b2f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="150" cy="50" r="28"/>
+              <path d="M150 78v130M150 106l-46 12-22 74M150 106l46 12 22 74M150 208l-26 170M150 208l26 170"/>
+            </g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="false" data-k="atama" aria-label="あたま"><circle class="ring" cx="150" cy="30" r="14"/><circle class="core" cx="150" cy="30" r="7"/></g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="true" data-k="waki" aria-label="わき"><circle class="ring" cx="112" cy="126" r="14"/><circle class="core" cx="112" cy="126" r="7"/></g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="false" data-k="mizoochi" aria-label="みぞおち"><circle class="ring" cx="150" cy="140" r="14"/><circle class="core" cx="150" cy="140" r="7"/></g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="false" data-k="tenohira" aria-label="てのひら"><circle class="ring" cx="218" cy="196" r="14"/><circle class="core" cx="218" cy="196" r="7"/></g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="false" data-k="sokei" aria-label="そけい部"><circle class="ring" cx="168" cy="214" r="14"/><circle class="core" cx="168" cy="214" r="7"/></g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="false" data-k="hizaura" aria-label="ひざうら"><circle class="ring" cx="137" cy="300" r="14"/><circle class="core" cx="137" cy="300" r="7"/></g>
+            <g class="dot" tabindex="0" role="button" aria-pressed="false" data-k="ashiura" aria-label="あしうら"><circle class="ring" cx="176" cy="380" r="14"/><circle class="core" cx="176" cy="380" r="7"/></g>
+          </svg>
+        </div>
+        <div>
+          <div class="panel rise" aria-live="polite">
+            <span class="p-k" id="pk">SWITCH</span>
+            <h3 id="pt">わき</h3>
+            <p id="pd">肩甲骨と腕をつなぐスイッチ。わきに触れてから腕を動かすと、腕だけでなく体ごと使えるようになります。</p>
+            <div class="use" id="pu"><span>ボール投げ</span><span>鉄棒で体を支える</span><span>跳び箱</span></div>
+          </div>
+          <div class="chips" role="group" aria-label="スイッチを選ぶ">
+            <button type="button" data-k="atama" aria-pressed="false">あたま</button>
+            <button type="button" data-k="waki" aria-pressed="true">わき</button>
+            <button type="button" data-k="mizoochi" aria-pressed="false">みぞおち</button>
+            <button type="button" data-k="tenohira" aria-pressed="false">てのひら</button>
+            <button type="button" data-k="sokei" aria-pressed="false">そけい部</button>
+            <button type="button" data-k="hizaura" aria-pressed="false">ひざうら</button>
+            <button type="button" data-k="ashiura" aria-pressed="false">あしうら</button>
+          </div>
+          <p class="hint">※図のポイントの位置は説明用です。正確な位置は教室でお伝えします。</p>
+        </div>
+      </div>
+
+      <div class="three">
+        <div class="rise"><span class="n">01</span><h3>触れる</h3><p>スイッチの場所を知り、手で触れて感覚を入れる。</p></div>
+        <div class="rise"><span class="n">02</span><h3>動く</h3><p>触れたまま、ゆっくり動かす。そこを中心に体が動く感覚をつかむ。</p></div>
+        <div class="rise"><span class="n">03</span><h3>定着する</h3><p>毎回くり返して、体の使い方を脳に覚えさせる。1日1〜3分から。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="f">
+    <div class="wrap">
+      <span class="kicker">FEATURES</span>
+      <h2 id="f">〇〇校の、<span class="hl-t">3つのこだわり</span></h2>
+      <div class="feat">
+        <div class="fcard main rise"><span class="k">01</span><h3>現役の体育の先生が、<br>直接みる</h3><p>学校の体育で、苦手な子とたくさん向き合ってきた先生が担当します。定員8名で、一人ひとりの小さな変化を見逃しません。</p></div>
+        <div class="fcard y rise"><span class="k">02</span><h3>毎回、自分の言葉で「発表」</h3><p>10秒アクションを一人ずつ、名前とやり方を説明しながら行います。体の使い方を、言葉で覚えます。</p></div>
+        <div class="fcard rise"><span class="k">03</span><h3>「できた」を具体的に伝える</h3><p>「昨日より足が上がってるよ」。結果ではなく、変化を言葉にして伝えます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--bg-2)" aria-labelledby="s">
+    <div class="wrap">
+      <span class="kicker">STORIES</span>
+      <h2 id="s">体の土台が変わると、<span class="hl">動きが変わる。</span></h2>
+      <div class="stories">
+        <article class="st rise">
+          <div class="head"><span class="av" aria-hidden="true"></span><div><span class="who">例：逆上がり</span><h3>練習の前に、感覚あそびから</h3></div></div>
+          <div class="days" aria-label="取り組みの流れ"><span>わきアクション</span><span>ぶら下がり・ダンゴムシ</span><span>タオル遊び</span><span>補助板</span><span class="goal">できた！</span></div>
+          <p style="margin:0;color:var(--ink-2);font-size:15px">逆上がりの練習ばかりはしない。感覚あそびと、小さな成功の積み重ねで。</p>
+        </article>
+        <article class="st rise">
+          <span class="chk">サンプル枠</span>
+          <div class="head"><span class="av" aria-hidden="true"></span><div><span class="who">開講後に掲載</span><h3>体験会・生徒さんの声</h3></div></div>
+          <p style="margin:0;color:var(--ink-2);font-size:15px">体験会に参加された方や、通っている子の変化をここに掲載します。</p>
+        </article>
+      </div>
+      <p class="disc">※このページは練習用のサンプルです。</p>
+    </div>
+  </section>
+
+  <section id="teacher" aria-labelledby="t">
+    <div class="wrap teacher">
+      <div class="t-ph rise">講師写真</div>
+      <div class="rise">
+        <span class="kicker">TEACHER</span>
+        <p class="t-role" style="margin:12px 0 0">〇〇校 講師</p>
+        <p class="t-name" id="t">〇〇 先生<span class="tbd">仮</span></p>
+        <ul class="tl">
+          <li><b>本業</b>現役の体育の先生</li>
+          <li><b>出会い</b>体軸を学び、自分の体が動きやすくなるのを体感</li>
+          <li><b>資格</b>体軸ファシリテーター／体軸キッズ&amp;ジュニアトレーナー</li>
+        </ul>
+        <p class="voice">全身と感覚から整える教え方で、子どもたちの「できた」をいっしょに見つけたいです。<span class="tbd">サンプル文</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" style="background:var(--bg-2)" aria-labelledby="sc">
+    <div class="wrap">
+      <span class="kicker">SCHEDULE &amp; PRICE</span>
+      <h2 id="sc">時間割とレッスン<span class="tbd">予定</span></h2>
+      <div class="sched">
+        <div class="dayc sat rise">
+          <div class="dh"><span class="badge">土</span><div><b>土曜日の朝</b><small>〇〇会場（A）</small></div></div>
+          <div class="slot"><time>9:00–9:50</time><span class="cls j">ジュニア・小学生</span></div>
+          <div class="slot"><time>10:00–10:50</time><span class="cls k">キッズ・幼児</span></div>
+          <div class="slot"><time>11:00–11:50</time><span class="cls j">ジュニア</span></div>
+          <div class="slot"><time>12:00–12:50</time><span class="cls j">ジュニア</span></div>
+          <div class="slot"><time>14:00–</time><span class="cls o">申込状況で追加</span></div>
+        </div>
+        <div class="side">
+          <div class="dayc tue rise">
+            <div class="dh"><span class="badge">火</span><div><b>火曜日の夕方</b><small>〇〇会場（B）</small></div></div>
+            <div class="slot"><time>17:00–17:50</time><span class="cls j">ジュニア</span></div>
+          </div>
+          <div class="note-c rise"><b>年中さんのジュニア参加の目安</b><br>毎回の10秒アクション発表で、名前とやり方を説明できること。</div>
+          <div class="price rise">
+            <div class="row"><span>料金<small>入会金・月謝</small></span><b style="font-size:20px;font-family:inherit;font-weight:900">体験会でご案内</b></div>
+            <div class="row"><span>レッスン<small>定員8名の少人数制</small></span><b style="font-size:20px;font-family:inherit;font-weight:900">週1回・50分</b></div>
+            <small style="margin-top:8px">入会時にTシャツ・リュック・ヨガマット・アクションブックのスターターセットをお渡しします</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="q">
+    <div class="wrap">
+      <span class="kicker">Q&amp;A</span>
+      <h2 id="q">よくある質問</h2>
+      <div class="faq">
+        <details><summary>運動がとても苦手でも大丈夫？</summary><p>大丈夫です。苦手な子のための教室です。体力テストの点数ではなく、昨日からの変化を大切にします。</p></details>
+        <details><summary>人見知りで、はじめての場所が不安です</summary><p>体験会は親子で参加できます。少人数なので、ゆっくり慣れていけます。</p></details>
+        <details><summary>見学はできますか？</summary><p>できます。おうちで続けるコツもお伝えします。</p></details>
+        <details><summary>鉄棒や跳び箱の練習もしますか？</summary><p>技の反復練習が中心ではありません。鉄棒や跳び箱につながる「体の使い方」を、遊びとアクションで育てます。</p></details>
+        <details><summary>先生が体に触れることはありますか？</summary><p>自分で自分の体のポイントに触れながら動くのが基本です。補助で触れるときは、必ずひと声かけてからにします。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="trial" style="padding-top:20px" aria-labelledby="tr">
+    <div class="wrap">
+      <div class="final rise">
+        <span class="kicker" style="color:#fff">TRIAL</span>
+        <h2 id="tr">まずは、からだの地図を<br>ひらきにきてください。</h2>
+        <p>3月の体験会の日程は、LINEでいちばんにお知らせします。</p>
+        <div class="road"><span>LINE登録</span><span>→</span><span>3月 体験会<span class="tbd">仮</span></span><span>→</span><span>4月 開講</span></div>
+        <div class="row">
+          <a class="big" href="#" aria-label="LINEで体験会の案内を受け取る（リンクは仮）">LINEで受け取る</a>
+          <a class="ghost" href="#" aria-label="Instagramを見る（リンクは仮）">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  TAIJIKU 子どもの運動学習塾 〇〇校（架空）｜「体軸」「TAIJIKU」は株式会社やまちゃんのブランドです<br>
+  このページはホームページ制作の練習で作ったサンプルです。名前・場所・時間・写真はすべて仮のものです。
+</footer>
+
+<nav class="dock" aria-label="申し込み"><a class="a1" href="#trial">体験会を予約</a><a class="a2" href="#trial">LINEで相談</a></nav>
+<nav class="vtab" aria-label="申し込み"><a href="#trial">体験会を予約</a><a class="t2" href="#trial">LINEで相談</a></nav>
+
+<script>
+(function(){
+  var data={
+    atama:{t:"あたま",d:"頭の正しい位置を体に覚えさせるスイッチ。頭の位置が整うと、姿勢の土台が整います。",u:["姿勢","バランス"]},
+    waki:{t:"わき",d:"肩甲骨と腕をつなぐスイッチ。わきに触れてから腕を動かすと、腕だけでなく体ごと使えるようになります。",u:["ボール投げ","鉄棒で体を支える","跳び箱"]},
+    mizoochi:{t:"みぞおち",d:"上半身と脚をつなぐ姿勢の中心。丸める・伸ばすをくり返して、背すじと股関節を連動させます。",u:["姿勢","歩く・走る"]},
+    tenohira:{t:"てのひら",d:"手のひらの真ん中に触れてグーパー。手全体がつながり、全身の力が手先まで伝わりやすくなります。",u:["握る","書く","道具を使う"]},
+    sokei:{t:"そけい部",d:"脚のつけ根のスイッチ。体幹と股関節をつなぎ、脚を前に振り出しやすくします。",u:["走る","脚を上げる","つまずき予防"]},
+    hizaura:{t:"ひざうら",d:"足首からひざ、股関節へのつながりを整えるスイッチ。地面をとらえて跳ぶ土台になります。",u:["ジャンプ","ダッシュ"]},
+    ashiura:{t:"あしうら",d:"地面を感じる、立つ・歩く・走るの土台。足指のグーパーで、足裏の感覚を目覚めさせます。",u:["立つ","バランス","走る"]}
+  };
+  var dots=document.querySelectorAll('.dot'),chips=document.querySelectorAll('.chips button');
+  function pick(k){
+    var x=data[k]; if(!x) return;
+    document.getElementById('pt').textContent=x.t;
+    document.getElementById('pd').textContent=x.d;
+    var u=document.getElementById('pu'); u.innerHTML='';
+    x.u.forEach(function(s){var e=document.createElement('span');e.textContent=s;u.appendChild(e)});
+    dots.forEach(function(d){d.setAttribute('aria-pressed',d.dataset.k===k?'true':'false')});
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.k===k?'true':'false')});
+  }
+  dots.forEach(function(d){
+    d.addEventListener('click',function(){pick(d.dataset.k)});
+    d.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(d.dataset.k)}});
+  });
+  chips.forEach(function(c){c.addEventListener('click',function(){pick(c.dataset.k)})});
+
+  var rise=document.querySelectorAll('.rise'), w=document.getElementById('worries');
+  if(!('IntersectionObserver' in window)){rise.forEach(function(e){e.classList.add('in')});w.classList.add('aligned');return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+  rise.forEach(function(e){io.observe(e)});
+  var io2=new IntersectionObserver(function(es){es.forEach(function(en){if(en.intersectionRatio>.75){w.classList.add('aligned')}})},{threshold:[0,.75,1]});
+  io2.observe(w);
+})();
+</script>
+<div class="sample-badge" aria-hidden="true">SAMPLE</div>
+</body>
+</html>

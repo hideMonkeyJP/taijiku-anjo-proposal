@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>TAIJIKU 子どもの運動学習塾 〇〇校｜先生からのお手紙（練習用サンプル）</title>
+<meta name="description" content="体育の「苦手」を「できた！」に。現役の体育の先生が教える、体の学習教室（ホームページ制作の練習用サンプル）。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbf6ec;
+    --paper-2:#f4ecdc;
+    --line:#e7dcc6;
+    --ink:#3f352c;
+    --ink-soft:#6b5e51;
+    --coral:#e0735f;
+    --coral-deep:#b9503d;
+    --sage:#8fae96;
+    --sage-deep:#4f7a5a;
+    --butter:#f6d77c;
+    --sky:#a9cbe0;
+    --card:#fffdf8;
+    --shadow:0 1px 0 rgba(63,53,44,.06),0 10px 24px -14px rgba(63,53,44,.35);
+    --hand:"Klee One","Zen Maru Gothic",serif;
+    --body:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--body);font-size:16px;line-height:1.9;letter-spacing:.02em;
+    background-image:
+      radial-gradient(rgba(63,53,44,.035) 1px, transparent 1px);
+    background-size:18px 18px;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--coral-deep)}
+  :focus-visible{outline:3px solid var(--sage-deep);outline-offset:3px;border-radius:6px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:8px 12px;z-index:100}
+  .skip:focus{left:8px;top:8px}
+
+  /* サンプル表示 */
+  .sample{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;font-size:12.5px;
+    text-align:center;padding:6px 12px;letter-spacing:.04em}
+  .sample b{color:var(--butter);font-weight:700}
+
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+
+  /* 見出し */
+  .label{display:inline-block;font-family:var(--hand);font-size:14px;font-weight:600;color:var(--ink);
+    background:var(--butter);padding:2px 14px;transform:rotate(-2deg);
+    box-shadow:0 1px 0 rgba(0,0,0,.05);position:relative}
+  .label::before,.label::after{content:"";position:absolute;top:0;bottom:0;width:6px;
+    background:repeating-linear-gradient(180deg,transparent 0 3px,var(--paper) 3px 6px)}
+  .label::before{left:-3px}.label::after{right:-3px}
+  .label.sage{background:#cfe0d2}.label.sky{background:#d5e6f0}.label.coral{background:#f6cdc3}
+  h2{font-family:var(--hand);font-weight:600;font-size:clamp(24px,4.6vw,34px);line-height:1.5;margin:14px 0 18px}
+  h3{font-family:var(--hand);font-weight:600;font-size:20px;line-height:1.5;margin:0 0 8px}
+  .lead{color:var(--ink-soft);max-width:38em}
+  .marker{background:linear-gradient(transparent 62%, rgba(246,215,124,.75) 62%);padding:0 2px}
+
+  /* ヘッダー */
+  header.top{padding:18px 0 0}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;color:var(--ink-soft);text-decoration:none}
+  .brand .dot{width:30px;height:30px;border-radius:50%;background:var(--coral);display:grid;place-items:center;color:#fff;font-family:var(--hand);font-size:16px}
+
+  /* ヒーロー */
+  .hero{padding:28px 0 64px}
+  .hero-grid{display:grid;gap:36px;align-items:center}
+  @media(min-width:860px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+  .hero h1{font-family:var(--hand);font-weight:600;font-size:clamp(32px,7vw,54px);line-height:1.35;margin:18px 0 18px}
+  .hero h1 .q{color:var(--coral-deep)}
+  .hero p.sub{font-size:17px;color:var(--ink-soft);margin:0 0 22px}
+  .dates{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+  .chip{background:var(--card);border:1.5px dashed var(--line);border-radius:999px;padding:6px 16px;font-size:14px;font-weight:700}
+  .chip em{font-style:normal;color:var(--coral-deep)}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;
+    padding:15px 26px;border-radius:999px;box-shadow:0 4px 0 var(--coral-deep);transition:transform .18s ease, box-shadow .18s ease;min-height:48px}
+  .btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--coral-deep)}
+  .btn svg{width:20px;height:20px}
+  .btn.ghost{background:transparent;color:var(--ink);box-shadow:none;border:2px solid var(--ink);}
+  .btn.ghost:hover{background:var(--ink);color:#fff;transform:none}
+
+  .polaroid{background:#fff;padding:14px 14px 50px;box-shadow:var(--shadow);transform:rotate(2.5deg);position:relative;max-width:420px;margin:0 auto}
+  .polaroid .ph{aspect-ratio:4/3.2;background:
+      linear-gradient(135deg,#f4dfcf,#dbe9dd);display:grid;place-items:center;color:var(--ink-soft);font-size:13px;text-align:center}
+  .polaroid .cap{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-family:var(--hand);font-size:17px}
+  .polaroid .tape{position:absolute;top:-12px;left:50%;width:110px;height:26px;margin-left:-55px;background:rgba(169,203,224,.75);transform:rotate(-4deg)}
+  .polaroid.small{transform:rotate(-3deg);max-width:300px}
+
+  /* お手紙 */
+  .letter{background:var(--card);border-radius:6px;box-shadow:var(--shadow);padding:44px 28px 40px;position:relative;
+    background-image:repeating-linear-gradient(transparent 0 35px, var(--line) 35px 36px);
+    background-position:0 18px}
+  @media(min-width:700px){.letter{padding:52px 64px 48px}}
+  .letter p{margin:0 0 0;line-height:36px;font-family:var(--hand);font-size:17.5px}
+  .letter p + p{margin-top:36px}
+  .letter .sign{text-align:right;margin-top:36px}
+  .letter::before{content:"";position:absolute;left:24px;top:-14px;width:120px;height:28px;background:rgba(246,215,124,.8);transform:rotate(-3deg)}
+
+  /* お悩み付箋 */
+  .notes{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:28px}
+  .sticky{background:#fff4c9;padding:22px 20px 26px;font-family:var(--hand);font-size:17px;line-height:1.7;box-shadow:var(--shadow);position:relative}
+  .sticky:nth-child(2n){background:#e3efe5;transform:rotate(1.2deg)}
+  .sticky:nth-child(3n){background:#fbe0d8;transform:rotate(-1.2deg)}
+  .sticky:nth-child(4n){background:#dde9f2}
+  .sticky::after{content:"";position:absolute;top:-8px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--coral);box-shadow:0 2px 2px rgba(0,0,0,.15)}
+  .answer{margin-top:34px;text-align:center;font-family:var(--hand);font-size:clamp(19px,3.6vw,24px);line-height:1.7}
+
+  /* 数字 */
+  .compare{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;max-width:520px;margin:28px auto 8px}
+  .bar{text-align:center}
+  .bar .b{border-radius:14px 14px 4px 4px;margin:0 auto 8px;width:86px}
+  .bar.then .b{height:180px;background:var(--sage)}
+  .bar.now .b{height:97px;background:var(--coral)}
+  .bar .n{font-family:var(--hand);font-size:26px;font-weight:600}
+  .bar .y{font-size:13px;color:var(--ink-soft)}
+  .arrow{font-family:var(--hand);font-size:15px;color:var(--ink-soft);padding-bottom:70px;text-align:center}
+  .src{font-size:12.5px;color:var(--ink-soft);text-align:center}
+
+  /* 体軸の流れ */
+  .steps{display:grid;gap:18px;margin-top:28px}
+  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:var(--card);border-radius:18px;padding:26px 22px;box-shadow:var(--shadow);position:relative}
+  .step .num{font-family:var(--hand);font-size:44px;line-height:1;color:var(--sage);font-weight:600}
+  .step svg{width:72px;height:72px;margin:6px 0 10px}
+  .step p{margin:0;color:var(--ink-soft);font-size:15px}
+  .note-box{margin-top:26px;border:2px dashed var(--sage);border-radius:16px;padding:18px 22px;background:#f2f7f2;font-size:15px}
+
+  /* 特徴 */
+  .features{display:grid;gap:22px;margin-top:28px}
+  @media(min-width:760px){.features{grid-template-columns:1fr 1fr}}
+  .feat{background:var(--card);border-radius:18px;padding:24px;box-shadow:var(--shadow);display:grid;grid-template-columns:52px 1fr;gap:16px}
+  .feat .ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fbe0d8;color:var(--coral-deep)}
+  .feat:nth-child(2) .ic{background:#e3efe5;color:var(--sage-deep)}
+  .feat:nth-child(3) .ic{background:#fff4c9;color:#9a7417}
+  .feat:nth-child(4) .ic{background:#dde9f2;color:#3f6f8d}
+  .feat:nth-child(5) .ic{background:#fbe0d8;color:var(--coral-deep)}
+  .feat .ic svg{width:26px;height:26px}
+  .feat p{margin:0;color:var(--ink-soft);font-size:15px}
+  .feat.wide{grid-column:1/-1}
+
+  /* 日記（逆上がり） */
+  .diary{display:grid;gap:30px;margin-top:28px;align-items:start}
+  @media(min-width:860px){.diary{grid-template-columns:.8fr 1.2fr}}
+  .timeline{list-style:none;margin:0;padding:0;position:relative}
+  .timeline::before{content:"";position:absolute;left:15px;top:8px;bottom:8px;border-left:2px dashed var(--line)}
+  .timeline li{position:relative;padding:0 0 22px 50px}
+  .timeline li::before{content:"";position:absolute;left:6px;top:6px;width:20px;height:20px;border-radius:50%;background:var(--paper);border:3px solid var(--sage)}
+  .timeline li.done::before{background:var(--coral);border-color:var(--coral)}
+  .timeline .when{font-family:var(--hand);font-weight:600;font-size:15px;color:var(--sage-deep)}
+  .timeline li.done .when{color:var(--coral-deep)}
+  .timeline p{margin:2px 0 0;font-size:15px}
+  .story{background:var(--card);border-radius:18px;padding:26px;box-shadow:var(--shadow);margin-top:26px}
+  .story .tag{font-size:12.5px;font-weight:700;color:#fff;background:var(--ink-soft);border-radius:6px;padding:2px 8px;display:inline-block;margin-bottom:10px}
+  .story .tag.check{background:#b07a1a}
+  .kg{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;font-family:var(--hand);font-weight:600;margin:6px 0 10px}
+  .kg .a{font-size:26px;color:var(--ink-soft)}
+  .kg .b{font-size:42px;color:var(--coral-deep)}
+  .story ul{margin:0;padding-left:1.2em;font-size:15px;color:var(--ink-soft)}
+  .disclaimer{font-size:12.5px;color:var(--ink-soft);margin-top:14px}
+
+  /* 先生 */
+  .teacher{display:grid;gap:30px;align-items:center}
+  @media(min-width:820px){.teacher{grid-template-columns:.8fr 1.2fr}}
+  .profile{list-style:none;padding:0;margin:16px 0 0;font-size:15px}
+  .profile li{padding:8px 0 8px 28px;border-bottom:1px dashed var(--line);position:relative}
+  .profile li::before{content:"";position:absolute;left:4px;top:17px;width:10px;height:10px;border-radius:50%;background:var(--sage)}
+  .quote{font-family:var(--hand);font-size:18px;line-height:1.9;background:#fff4c9;padding:20px 22px;border-radius:4px 18px 18px 18px;margin-top:20px;position:relative}
+
+  /* 時間割 */
+  .tt-grid{display:grid;gap:22px;margin-top:28px}
+  @media(min-width:820px){.tt-grid{grid-template-columns:1.3fr 1fr}}
+  .tt{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:22px 22px 10px}
+  .tt h3{display:flex;align-items:center;gap:10px}
+  .tt h3 .day{font-family:var(--body);font-size:13px;font-weight:700;color:#fff;background:var(--sage-deep);border-radius:999px;padding:2px 12px}
+  .tt.tue h3 .day{background:#3f6f8d}
+  .tt .place{font-size:13px;color:var(--ink-soft);margin:-2px 0 10px}
+  .tt table{width:100%;border-collapse:collapse;font-size:15px}
+  .tt td{padding:11px 4px;border-top:1px dashed var(--line)}
+  .tt td:first-child{font-variant-numeric:tabular-nums;font-weight:700;width:42%}
+  .pill{display:inline-block;font-size:13px;font-weight:700;border-radius:999px;padding:2px 12px}
+  .pill.jr{background:#dde9f2;color:#2f5873}
+  .pill.kids{background:#fbe0d8;color:var(--coral-deep)}
+  .pill.opt{background:var(--paper-2);color:var(--ink-soft)}
+  .hint{margin-top:18px;background:#f2f7f2;border-radius:14px;padding:16px 18px;font-size:14.5px}
+  .tbd{display:inline-block;font-size:11.5px;font-weight:700;color:#8a5a00;background:#ffe9a8;border-radius:5px;padding:0 6px;margin-left:6px;vertical-align:2px}
+
+  /* 料金・流れ */
+  .flow{display:grid;gap:14px;margin-top:26px;counter-reset:f}
+  @media(min-width:760px){.flow{grid-template-columns:repeat(3,1fr)}}
+  .flow div{background:var(--card);border-radius:16px;padding:20px;box-shadow:var(--shadow);counter-increment:f;position:relative}
+  .flow div::before{content:counter(f);font-family:var(--hand);font-weight:600;font-size:15px;color:#fff;background:var(--coral);
+    width:30px;height:30px;border-radius:50%;display:grid;place-items:center;margin-bottom:8px}
+  .flow strong{display:block;font-family:var(--hand);font-size:18px}
+  .flow span{font-size:14px;color:var(--ink-soft)}
+  .price{margin-top:22px;background:var(--card);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center}
+  .price b{font-family:var(--hand);font-size:20px}
+
+  /* FAQ */
+  .faq{margin-top:24px;display:grid;gap:12px}
+  details{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:0 20px}
+  summary{cursor:pointer;list-style:none;padding:18px 34px 18px 0;font-weight:700;position:relative;min-height:48px}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"Q";font-family:var(--hand);color:var(--coral-deep);margin-right:10px;font-size:18px}
+  summary::after{content:"";position:absolute;right:4px;top:50%;width:10px;height:10px;border-right:2.5px solid var(--ink-soft);border-bottom:2.5px solid var(--ink-soft);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+  details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+  details p{margin:0 0 18px;padding-left:28px;color:var(--ink-soft);font-size:15px}
+
+  /* CTA */
+  .cta{background:var(--card);border-radius:28px;box-shadow:var(--shadow);padding:44px 26px;text-align:center;position:relative;overflow:hidden}
+  .cta::before{content:"";position:absolute;inset:0;background:
+     radial-gradient(circle at 10% 20%, rgba(246,215,124,.35) 0 60px, transparent 61px),
+     radial-gradient(circle at 92% 80%, rgba(143,174,150,.30) 0 80px, transparent 81px);pointer-events:none}
+  .cta h2{margin-top:6px}
+  .cta .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px;position:relative}
+  footer{padding:40px 0 60px;font-size:12.5px;color:var(--ink-soft);text-align:center}
+
+  /* 出現アニメーション */
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .btn{transition:none}
+  }
+
+  .sample-badge{position:fixed;left:-46px;bottom:28px;z-index:300;transform:rotate(45deg);background:#222;color:#ffe066;
+    font:700 12px/1 sans-serif;letter-spacing:.2em;padding:8px 52px;pointer-events:none;opacity:.9}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+<div class="sample" role="note"><b>練習用サンプル</b>　ホームページ制作の練習で作った架空の教室ページです。名前・場所・時間・写真はすべて仮のものです（デザイン2：手紙風）</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="dot" aria-hidden="true">体</span>TAIJIKU 子どもの運動学習塾 〇〇校</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="label">20XX年4月 開講</span>
+        <h1>体育の「苦手」を、<br><span class="q">「できた！」</span>に。</h1>
+        <p class="sub">筋トレでも、ひたすら練習でもなく。<br>体の使い方を学ぶ、<span class="marker">「体の学習教室」</span>です。</p>
+        <div class="dates">
+          <span class="chip"><em>3月</em> 体験会を開きます<span class="tbd">仮</span></span>
+          <span class="chip">〇〇市・〇〇会場</span>
+        </div>
+        <a class="btn" href="#join">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>
+          体験会のお知らせを受け取る
+        </a>
+      </div>
+      <figure class="polaroid" aria-label="写真の差し替え位置">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="ph">写真：ワークショップで<br>親子で体軸体操をしている様子</div>
+        <figcaption class="cap">できた！の顔、見たいです</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- お手紙 -->
+  <section aria-labelledby="hello">
+    <div class="wrap">
+      <span class="label sage">はじめまして</span>
+      <h2 id="hello">〇〇です。</h2>
+      <div class="letter reveal">
+        <p>〇〇市で、子どもの「体の学習教室」をはじめることになりました。ふだんは学校で体育を教えている、〇〇です。</p>
+        <p>体育の授業では、跳び箱や逆上がりの「やり方」は教えられても、「体の使い方」まで教える時間はなかなかありません。がんばっているのにできない子を、たくさん見てきました。</p>
+        <p>体軸に出会って、自分の体が動きやすくなることに驚きました。だからこそ今度は、子どもたちに届けたいと思っています。</p>
+        <p>「できない」の裏には、がんばりが足りないのではなく、まだ育っていない「体の土台」があるのかもしれません。その子のペースで、小さな「できた」をいっしょに見つけていけたらうれしいです。</p>
+        <p class="sign">〇〇<span class="tbd" style="font-family:var(--body)">サンプル文</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- お悩み -->
+  <section aria-labelledby="worry">
+    <div class="wrap">
+      <span class="label coral">こんなこと、ありませんか？</span>
+      <h2 id="worry">おうちの方から、よく聞くお悩みです</h2>
+      <div class="notes">
+        <div class="sticky reveal">逆上がりや跳び箱が、何度練習してもできない</div>
+        <div class="sticky reveal">かけっこが遅い。よく転んでケガをする</div>
+        <div class="sticky reveal">姿勢が悪くて、すぐ猫背になる</div>
+        <div class="sticky reveal">靴紐やお箸など、手先が不器用</div>
+        <div class="sticky reveal">「体育きらい」と言うようになった</div>
+      </div>
+      <p class="answer reveal">それは「努力不足」ではなく、<br><span class="marker">体の土台がまだ育っていないだけ</span>かもしれません。</p>
+    </div>
+  </section>
+
+  <!-- いまの子ども -->
+  <section aria-labelledby="now" style="background:var(--paper-2)">
+    <div class="wrap">
+      <span class="label sky">いまの子どもたち</span>
+      <h2 id="now">外遊びの時間は、35年でほぼ半分に</h2>
+      <p class="lead">外遊びは、子どもにとっての「体の学習」の時間でした。木に登る、ぶら下がる、転がる。そんな経験が減って、自分の体を思い通りに動かす力が育ちにくくなっています。学校の体育では「やり方」は教わっても、「体の使い方」を教わる機会はほとんどありません。</p>
+      <div class="compare" role="img" aria-label="子どもの1日の外遊び時間。1981年は約130分、2016年は約70分">
+        <div class="bar then"><div class="b"></div><div class="n">約130分</div><div class="y">1981年</div></div>
+        <div class="arrow">→</div>
+        <div class="bar now"><div class="b"></div><div class="n">約70分</div><div class="y">2016年</div></div>
+      </div>
+      <p class="src">子どもの1日の外遊び時間（体軸入門セミナーで紹介されたデータ）</p>
+    </div>
+  </section>
+
+  <!-- 体軸とは -->
+  <section aria-labelledby="what">
+    <div class="wrap">
+      <span class="label sage">体軸（たいじく）って？</span>
+      <h2 id="what">体を「鍛える」のではなく、<br>体を「感じる」ことから。</h2>
+      <p class="lead">体軸は、自分の体を感じて、思い通りに動かすための「体の感覚学習」です。全身に14か所ある「クロスポイント（人体のスイッチ）」に触れながら動くことで、必要な筋肉を、必要なタイミングで使えるようにしていきます。</p>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="num">1</div>
+          <svg viewBox="0 0 72 72" fill="none" stroke="#4f7a5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="36" cy="18" r="8"/><path d="M36 26v22M24 36l12-4 12 4M30 64l6-16 6 16"/><path d="M50 30c4-3 8-2 9 1" stroke="#e0735f"/><circle cx="48" cy="33" r="3" fill="#f6d77c" stroke="#e0735f"/></svg>
+          <h3>スイッチに触れる</h3>
+          <p>わきの後ろ、手のひら、みぞおち…。場所を覚えて、手で触れて感覚を入れます。</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">2</div>
+          <svg viewBox="0 0 72 72" fill="none" stroke="#4f7a5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="36" cy="16" r="8"/><path d="M36 24v22M20 30l16 6 16-6M28 64l8-18 8 18"/><path d="M12 22c-4 6-4 12 0 18M60 22c4 6 4 12 0 18" stroke="#e0735f"/></svg>
+          <h3>触れながら動く</h3>
+          <p>スイッチを中心に、ゆっくり動かします。「ここを使うんだ」が体に伝わります。</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">3</div>
+          <svg viewBox="0 0 72 72" fill="none" stroke="#4f7a5a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 30c0-10 7-16 15-16s14 6 14 14c0 6-3 9-6 11v8H29v-6c-4-2-7-6-7-11z"/><path d="M30 55h14M32 60h10"/><path d="M14 20l-4-3M58 20l4-3M36 6V2" stroke="#e0735f"/></svg>
+          <h3>くり返して、覚える</h3>
+          <p>毎日1〜3分でもOK。くり返すことで、体の使い方が脳に定着していきます。</p>
+        </div>
+      </div>
+      <div class="note-box">いちばん大切にしているのは、<b>苦手な動きをひたすら練習する前に、その動きができる「体の土台」をつくる</b>ことです。</div>
+    </div>
+  </section>
+
+  <!-- 特徴 -->
+  <section aria-labelledby="feature" style="background:var(--paper-2)">
+    <div class="wrap">
+      <span class="label">教室のこと</span>
+      <h2 id="feature">この教室で、大切にしていること</h2>
+      <div class="features">
+        <div class="feat reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 9v5c0 2 3 4 6 4s6-2 6-4V9"/></svg></div>
+          <div><h3>体操教室でも、運動教室でもない「体の学習教室」</h3><p>技の練習の前に、できる体の土台をつくります。</p></div>
+        </div>
+        <div class="feat reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M5 21v-1a7 7 0 0114 0v1"/></svg></div>
+          <div><h3>現役の体育の先生が担当</h3><p>学校の体育で、苦手な子とたくさん向き合ってきました。</p></div>
+        </div>
+        <div class="feat reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 01-11.8 7L3 21l2-6A8 8 0 1121 12z"/></svg></div>
+          <div><h3>毎回「10秒アクション」の発表タイム</h3><p>一人ずつ、アクションの名前とやり方を説明しながら行います。体の使い方を、自分の言葉で覚えます。</p></div>
+        </div>
+        <div class="feat reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
+          <div><h3>おうちでも続けられる</h3><p>体軸体操は3歳から取り組めて、一生使えるセルフケア。1日1〜3分から。</p></div>
+        </div>
+        <div class="feat wide reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.5 7L12 17.6 5.7 21l1.5-7L2 9.3l7-.8z"/></svg></div>
+          <div><h3>小さな「できた」を見つけて、ちゃんと伝える</h3><p>できる・できないではなく、「昨日より足が上がってるよ」「わきが上手に使えてるね」と、昨日からの変化を具体的に伝えます。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 変化の例 -->
+  <section aria-labelledby="story">
+    <div class="wrap">
+      <span class="label coral">変化の記録</span>
+      <h2 id="story">逆上がりができるまで（例）</h2>
+      <div class="diary">
+        <figure class="polaroid small" aria-label="写真の差し替え位置">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="ph">写真：鉄棒で<br>逆上がりに挑戦する様子</div>
+          <figcaption class="cap">できたよ！</figcaption>
+        </figure>
+        <div>
+          <ol class="timeline">
+            <li><span class="when">はじめ</span><p>まだ逆上がりはできない。逆上がりの練習ばかりはしない、と決めました。</p></li>
+            <li><span class="when">毎日の遊び</span><p>鉄棒の前に「わきアクション」「レッグアクション」。前回り、ぶら下がり、ダンゴムシ。おうちではタオル遊び。</p></li>
+            <li><span class="when">補助板で</span><p>まず補助板でできて、大よろこび。板なしでは、自分で「わき」を意識するように。</p></li>
+            <li><span class="when">声かけ</span><p>「昨日より足が上がってるよ」。できたところを具体的に伝えて、何度も挑戦。</p></li>
+            <li class="done"><span class="when">そして</span><p>ついに逆上がり成功！</p></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="story reveal">
+        <span class="tag">サンプル枠</span>
+        <h3>体験会・生徒さんの声</h3>
+        <p style="margin:0;font-size:15px;color:var(--ink-soft)">開講後、体験会に参加された方や、通っている子の変化をここに掲載します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 先生 -->
+  <section aria-labelledby="teacher" style="background:var(--paper-2)">
+    <div class="wrap teacher">
+      <figure class="polaroid" aria-label="写真の差し替え位置" style="max-width:320px">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="ph" style="aspect-ratio:3/3.4">写真：先生</div>
+        <figcaption class="cap">〇〇先生</figcaption>
+      </figure>
+      <div>
+        <span class="label sage">先生のこと</span>
+        <h2 id="teacher">〇〇 先生<span class="tbd" style="font-family:var(--body)">仮</span></h2>
+        <ul class="profile">
+          <li>現役の体育の先生</li>
+          <li>体軸ファシリテーター／体軸キッズ&amp;ジュニアトレーナー</li>
+          <li>地域で体軸のワークショップを開催</li>
+        </ul>
+        <p class="quote">一人ひとりの小さな変化を、いちばん近くで見つけたいです。<span class="tbd" style="font-family:var(--body)">サンプル文</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 時間割 -->
+  <section aria-labelledby="time">
+    <div class="wrap">
+      <span class="label sky">クラスと時間割</span>
+      <h2 id="time">土曜日と火曜日に開きます<span class="tbd" style="font-family:var(--body);font-size:12px">予定</span></h2>
+      <div class="tt-grid">
+        <div class="tt reveal">
+          <h3><span class="day">土</span>土曜日</h3>
+          <p class="place">〇〇会場（A）</p>
+          <table>
+            <tr><td>9:00〜9:50</td><td><span class="pill jr">ジュニア（小学生）</span></td></tr>
+            <tr><td>10:00〜10:50</td><td><span class="pill kids">キッズ（幼児）</span></td></tr>
+            <tr><td>11:00〜11:50</td><td><span class="pill jr">ジュニア</span></td></tr>
+            <tr><td>12:00〜12:50</td><td><span class="pill jr">ジュニア</span></td></tr>
+            <tr><td>14:00〜</td><td><span class="pill opt">お申し込み状況により追加</span></td></tr>
+          </table>
+        </div>
+        <div>
+          <div class="tt tue reveal">
+            <h3><span class="day">火</span>火曜日</h3>
+            <p class="place">〇〇会場（B）</p>
+            <table><tr><td>17:00〜17:50</td><td><span class="pill jr">ジュニア</span></td></tr></table>
+          </div>
+          <div class="hint reveal"><b>年中さんがジュニアクラスに入る目安</b><br>毎回、10秒アクションを一人ずつ発表します。アクションの名前とやり方を説明できることが、ひとつの目安です。</div>
+        </div>
+      </div>
+
+      <div class="price reveal">
+        <b>料金</b>
+        <span>体験会で、くわしくご案内します</span>
+        <span style="color:var(--ink-soft);font-size:14px">週1回・50分。入会時には、Tシャツ・リュック・ヨガマット・アクションブックのスターターセットをお渡しします</span>
+      </div>
+
+      <div class="flow">
+        <div class="reveal"><strong>お知らせを受け取る</strong><span>LINE・インスタで体験会の日程をお届けします</span></div>
+        <div class="reveal"><strong>3月 体験会</strong><span>親子で体軸体操を体験。体が変わる感覚を、ぜひ<span class="tbd">仮</span></span></div>
+        <div class="reveal"><strong>4月 開講</strong><span>週1回、体の学習を積み上げていきます</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-labelledby="faq" style="background:var(--paper-2)">
+    <div class="wrap">
+      <span class="label">よくある質問</span>
+      <h2 id="faq">気になること、お答えします</h2>
+      <div class="faq">
+        <details><summary>運動がとても苦手でも大丈夫ですか？</summary><p>大丈夫です。苦手な子のための教室です。体力テストの点数ではなく、昨日からの変化を大切にします。</p></details>
+        <details><summary>何歳から通えますか？</summary><p>キッズクラスは幼児さんから通えます（対象年齢は調整中です）。体軸体操は3歳から取り組めます。</p></details>
+        <details><summary>先生が体に触れることはありますか？</summary><p>体軸では、自分で自分の体のポイントに触れながら動くのが基本です。補助で触れるときは、必ずひと声かけてからにします。</p></details>
+        <details><summary>保護者も見学できますか？</summary><p>見学できます（予定）。おうちで続けるコツもお伝えします。</p></details>
+        <details><summary>持ち物は？</summary><p>動きやすい服装、水筒、タオルです（予定）。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="join" aria-labelledby="joinh">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="label coral">まずは、会いにきてください</span>
+        <h2 id="joinh">3月の体験会で、お待ちしています</h2>
+        <p class="lead" style="margin:0 auto">日程が決まったら、LINEとインスタでいちばんにお知らせします。毎月のワークショップの情報もお届けしています。</p>
+        <div class="btns">
+          <a class="btn" href="#" aria-label="公式LINEでお知らせを受け取る（リンクは仮）">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5c0 4.1-4 7.5-9 7.5-1 0-2-.1-2.9-.4L5 20l1-3.2C4.2 15.4 3 13.6 3 11.5 3 7.4 7 4 12 4s9 3.4 9 7.5z"/></svg>
+            LINEで受け取る
+          </a>
+          <a class="btn ghost" href="#" aria-label="Instagramを見る（リンクは仮）">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            インスタを見る
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    TAIJIKU 子どもの運動学習塾 〇〇校（架空）<br>
+    「体軸」「TAIJIKU」は株式会社やまちゃんのブランドです<br>
+    このページはホームページ制作の練習で作ったサンプルです。名前・場所・時間・写真はすべて仮のものです。
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+    },{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  })();
+</script>
+<div class="sample-badge" aria-hidden="true">SAMPLE</div>
+</body>
+</html>

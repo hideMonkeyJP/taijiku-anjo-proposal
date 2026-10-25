@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ホームページ制作の練習</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f4f3ef;--ink:#222;--muted:#5f5f5f;--card:#fff;--line:#e3e1da;--tag:#ffe066}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1b1c1e;--ink:#eee;--muted:#b0b0b0;--card:#26282b;--line:#3a3c40}}
+  :root[data-theme="dark"]{--bg:#1b1c1e;--ink:#eee;--muted:#b0b0b0;--card:#26282b;--line:#3a3c40}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.8}
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 16px 60px}
+  .badge{display:inline-block;background:var(--tag);color:#222;font-weight:900;font-size:13px;letter-spacing:.12em;border-radius:6px;padding:2px 10px}
+  h1{font-size:clamp(24px,4vw,34px);margin:10px 0 6px;font-weight:900}
+  .lead{color:var(--muted);margin:0 0 30px;max-width:46em}
+  .grid{display:grid;gap:22px}
+  @media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+  .frame{height:430px;border-bottom:1px solid var(--line);background:#fff;position:relative;overflow:hidden}
+  .frame iframe{width:390px;height:860px;border:0;transform:scale(.5);transform-origin:0 0;position:absolute;left:calc(50% - 97px);top:0}
+  .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .no{font-size:13px;font-weight:700;color:var(--muted)}
+  h2{margin:0;font-size:21px;font-weight:900}
+  .sw{display:flex;gap:6px}
+  .sw i{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.1)}
+  dl{margin:0;display:grid;grid-template-columns:5.5em 1fr;gap:4px 10px;font-size:14px}
+  dt{color:var(--muted);font-weight:700}
+  dd{margin:0}
+  .open{margin-top:auto;display:inline-flex;justify-content:center;align-items:center;min-height:46px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:700}
+  .note{margin-top:30px;font-size:13.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">練習用サンプル</span>
+  <h1>ホームページ制作の練習：3つのデザイン</h1>
+  <p class="lead">ホームページ制作の勉強として、子どもの運動教室を題材に、同じ中身で見た目だけを変えたページを3つ作りました。教室名・先生の名前・場所・時間・写真はすべて仮のものです。</p>
+  <div class="grid">
+    <article class="card">
+      <div class="frame"><iframe src="design1-official/index.html" title="デザイン1のプレビュー" loading="lazy"></iframe></div>
+      <div class="body">
+        <span class="no">デザイン1</span>
+        <h2>公式サイト風</h2>
+        <div class="sw" aria-hidden="true"><i style="background:#7fccec"></i><i style="background:#dc6a2a"></i><i style="background:#0b5a9d"></i><i style="background:#fff5ef"></i></div>
+        <dl>
+          <dt>練習した点</dt><dd>ブランドの公式サイトに色・作りをそろえる。情報の多い縦長ページを読みやすく区切る</dd>
+          <dt>使ったもの</dt><dd>水色の帯、オレンジのボタン、青い帯の「選ばれる理由」、レッスンの流れの表</dd>
+        </dl>
+        <a class="open" href="design1-official/index.html">開く</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="frame"><iframe src="design2-letter/index.html" title="デザイン2のプレビュー" loading="lazy"></iframe></div>
+      <div class="body">
+        <span class="no">デザイン2</span>
+        <h2>手紙風</h2>
+        <div class="sw" aria-hidden="true"><i style="background:#fbf6ec"></i><i style="background:#e0735f"></i><i style="background:#8fae96"></i><i style="background:#f6d77c"></i></div>
+        <dl>
+          <dt>練習した点</dt><dd>先生からの手紙のような、あたたかい語り口とデザインを合わせる</dd>
+          <dt>使ったもの</dt><dd>手書き風の文字、罫線の便せん、付箋、マスキングテープ、日記風のタイムライン</dd>
+        </dl>
+        <a class="open" href="design2-letter/index.html">開く</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="frame"><iframe src="design3-bodymap/index.html" title="デザイン3のプレビュー" loading="lazy"></iframe></div>
+      <div class="body">
+        <span class="no">デザイン3</span>
+        <h2>からだの地図</h2>
+        <div class="sw" aria-hidden="true"><i style="background:#f6f7f3"></i><i style="background:#f26b4b"></i><i style="background:#2a8c82"></i><i style="background:#f5c242"></i></div>
+        <dl>
+          <dt>練習した点</dt><dd>今どきの習い事サイトを参考に、触って分かる仕掛けを入れる</dd>
+          <dt>使ったもの</dt><dd>押すと説明が出る体の図、楕円の写真枠、スマホでは画面下に固定したボタン</dd>
+        </dl>
+        <a class="open" href="design3-bodymap/index.html">開く</a>
+      </div>
+    </article>
+  </div>
+  <p class="note">「体軸」「TAIJIKU」は株式会社やまちゃんのブランドです。デザインの参考: TAIJIKU 公式サイト、学藝の森 CoE、ひなたキッズ体操教室、ネイス体操教室ほか（考え方のみ参考にし、文面・画像は使っていません）。</p>
+</div>
+</body>
+</html>
